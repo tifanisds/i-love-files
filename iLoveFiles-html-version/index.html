@@ -11,6 +11,7 @@
 </head>
 <body>
     <div id="header"></div>
+    <div id="main"></div>
 
 <script>
   fetch("components/header.html")
@@ -19,6 +20,13 @@
       document.getElementById("header").innerHTML = data;
     })
     .catch(error => console.error("Erro ao carregar o header:", error));
+
+    fetch("components/main.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("main").innerHTML = data;
+    })
+    .catch(error => console.error("Erro ao carregar o main:", error));
 </script>
 </body>
 </html>
