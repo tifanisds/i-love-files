@@ -8,3 +8,12 @@
 body {
     background-color: #6161DC;
 }
+
+.credit {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 16px;
+    color: #FFF;
+    margin-top: 25px;
+}
